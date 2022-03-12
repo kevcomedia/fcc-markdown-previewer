@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import Editor from './components/Editor'
 import Preview from './components/Preview'
+import initialMarkdown from './initialMarkdown'
 
 const App = () => {
-  const [rawMarkdown, setRawMarkdown] = useState('# example text')
+  const [rawMarkdown, setRawMarkdown] = useState(initialMarkdown)
 
   return (
     <section className="p-8 bg-sky-200 h-full">

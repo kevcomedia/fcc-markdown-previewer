@@ -7,7 +7,7 @@ const Editor = ({ value, onChange }) => {
     <textarea
       className="border-2 border-sky-800 rounded font-mono text-sm p-4 w-full"
       id="editor"
-      cols={10}
+      rows={10}
       value={value}
       autoFocus={true}
       onChange={handleChange}

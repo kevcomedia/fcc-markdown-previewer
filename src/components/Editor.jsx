@@ -1,11 +1,16 @@
-const Editor = () => {
+const Editor = ({ value, onChange }) => {
+  const handleChange = (event) => {
+    onChange(event.target.value)
+  }
+
   return (
     <textarea
       className="border-2 border-sky-800 rounded font-mono text-sm p-4 w-full h-full"
       id="editor"
       cols={10}
-      value="# example text"
+      value={value}
       autoFocus={true}
+      onChange={handleChange}
     />
   )
 }

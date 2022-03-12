@@ -1,5 +1,10 @@
 import { marked } from 'marked'
 
+marked.setOptions({
+  gfm: true,
+  breaks: true,
+})
+
 const Preview = ({ markdown }) => {
   return (
     <section

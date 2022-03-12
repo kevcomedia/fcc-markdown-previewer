@@ -5,7 +5,7 @@ const Editor = ({ value, onChange }) => {
 
   return (
     <textarea
-      className="border-2 border-sky-800 rounded font-mono text-sm p-4 w-full h-full"
+      className="border-2 border-sky-800 rounded font-mono text-sm p-4 w-full"
       id="editor"
       cols={10}
       value={value}

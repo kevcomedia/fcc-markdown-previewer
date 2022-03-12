@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import Editor from './components/Editor'
 import Preview from './components/Preview'
+import initialMarkdown from './initialMarkdown'
 
 const App = () => {
-  const [rawMarkdown, setRawMarkdown] = useState('# example text')
+  const [rawMarkdown, setRawMarkdown] = useState(initialMarkdown)
 
   return (
     <section className="p-8 bg-sky-200 h-full">
@@ -12,14 +13,9 @@ const App = () => {
           Markdown Previewer
         </h1>
 
-        <div className="grow grid grid-cols-2 gap-x-4">
-          <div>
-            <Editor value={rawMarkdown} onChange={setRawMarkdown} />
-          </div>
-
-          <div>
-            <Preview markdown={rawMarkdown} />
-          </div>
+        <div className="grow grid grid-cols-2 gap-x-4 max-h-[32rem] h-full">
+          <Editor value={rawMarkdown} onChange={setRawMarkdown} />
+          <Preview markdown={rawMarkdown} />
         </div>
       </div>
     </section>

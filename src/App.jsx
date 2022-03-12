@@ -1,4 +1,5 @@
 import Editor from './components/Editor'
+import Preview from './components/Preview'
 
 const App = () => {
   return (
@@ -13,12 +14,9 @@ const App = () => {
             <Editor />
           </div>
 
-          <section
-            className="border-2 border-sky-800 rounded bg-white p-4 overflow-y-auto"
-            id="preview"
-          >
-            <h1>example text</h1>
-          </section>
+          <div>
+            <Preview />
+          </div>
         </div>
       </div>
     </section>

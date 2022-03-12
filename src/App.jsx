@@ -1,3 +1,5 @@
+import Editor from './components/Editor'
+
 const App = () => {
   return (
     <section className="p-8 bg-sky-200 h-full">
@@ -8,13 +10,7 @@ const App = () => {
 
         <div className="grow grid grid-cols-2 gap-x-4">
           <div>
-            <textarea
-              className="border-2 border-sky-800 rounded font-mono text-sm p-4 w-full h-full"
-              id="editor"
-              cols={10}
-              value="# example text"
-              autoFocus={true}
-            />
+            <Editor />
           </div>
 
           <section
